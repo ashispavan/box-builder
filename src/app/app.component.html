@@ -1,3 +1,9 @@
-<app-action-panel (increaseCount)="incrementCount()" (decreaseCount)="decrementCount()">
-</app-action-panel>
-<app-boxes [boxes]="boxes"></app-boxes>
+<div class="page">
+  <mat-card class="container">
+    <h1>Box Builder</h1>
+    <app-action-panel [count]="count" (increaseCount)="incrementCount()" (decreaseCount)="decrementCount()">
+    </app-action-panel>
+    <p *ngIf="count <= 0">No boxes</p>
+    <app-boxes [boxes]="boxes" [count]="count"></app-boxes>
+  </mat-card>
+</div>

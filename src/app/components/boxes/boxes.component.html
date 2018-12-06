@@ -1,3 +1,9 @@
 <div class="boxes">
-  <span *ngFor="let number of boxes">{{number}}</span>
+  <div class="box" [ngClass]="{'blue':number % 2 != 0, 'black': number % 2 == 0, 'orange': number % 5 == 0}" *ngFor="let number of boxes">
+    {{number}}
+  </div>
+</div>
+
+<div *ngIf="count > 0" class="count" [style.font-size.px]="fontSize">
+  {{count}}
 </div>

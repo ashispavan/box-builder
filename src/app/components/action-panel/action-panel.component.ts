@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 
 @Component({
@@ -11,6 +11,8 @@ export class ActionPanelComponent implements OnInit {
   @Output() increaseCount: EventEmitter<any> = new EventEmitter();
 
   @Output() decreaseCount: EventEmitter<any> = new EventEmitter();
+
+  @Input() count: number;
 
   constructor() { }
 

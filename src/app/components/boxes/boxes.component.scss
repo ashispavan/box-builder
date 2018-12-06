@@ -1,0 +1,30 @@
+.blue{
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+.orange {
+    box-shadow: 0px -4px 0px 0px orange;
+}
+
+.box {
+    color: white;
+    margin: 0 2px;
+    min-width: 20px;
+    padding: 5px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.count {
+    margin-top: 20px;
+}
