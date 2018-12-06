@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-counter';
+
+  public count: number = 0;
+
+  public boxes: Array<number> = [];
+
+  constructor() {
+
+  }
+
+  public incrementCount(): void {
+    this.count++;
+    this.boxes.push(this.count);
+  }
+
+  public decrementCount(): void {
+    this.count--;
+    this.boxes.pop();
+  }
+
 }
